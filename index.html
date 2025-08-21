@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KTM Motorcycles - Ready to Race</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo-wrapper">
+                    <a href="index.html">
+                        <img src="Images/Logo.jpg" alt="KTM Logo" class="logo">
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">Models <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="pages/690-enduro.html">690 Enduro R</a></li>
+                                <li><a href="pages/1290-adventure.html">1290 Adventure</a></li>
+                                <li><a href="pages/duke-790.html">Duke 790</a></li>
+                                <li><a href="pages/rc-8c.html">RC 8C</a></li>
+                                <li><a href="pages/super-duke-1290.html">Super Duke 1290</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Carousel -->
+    <section class="hero-carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="Images/690 Enduro/690 Enduro Banner.jpg" alt="690 Enduro R">
+                <div class="carousel-content">
+                    <h1 class="carousel-title">690 ENDURO R</h1>
+                    <p class="carousel-subtitle">CONQUER ANY TERRAIN</p>
+                    <a href="pages/690-enduro.html" class="btn-primary">DISCOVER MORE</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="Images/1290 Adventure/1290 Adventure Banner.jpg" alt="1290 Adventure">
+                <div class="carousel-content">
+                    <h1 class="carousel-title">1290 SUPER ADVENTURE R</h1>
+                    <p class="carousel-subtitle">BUILT FOR ADVENTURE</p>
+                    <a href="pages/1290-adventure.html" class="btn-primary">DISCOVER MORE</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="Images/Duke 790/duke 790 banner.png" alt="Duke 790">
+                <div class="carousel-content">
+                    <h1 class="carousel-title">790 DUKE</h1>
+                    <p class="carousel-subtitle">THE SCALPEL</p>
+                    <a href="pages/duke-790.html" class="btn-primary">DISCOVER MORE</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="Images/RC 8C/RC 8C Banner.jpg" alt="RC 8C">
+                <div class="carousel-content">
+                    <h1 class="carousel-title">RC 8C</h1>
+                    <p class="carousel-subtitle">TRACK WEAPON</p>
+                    <a href="pages/rc-8c.html" class="btn-primary">DISCOVER MORE</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="Images/Superduke 1290/Superduke1290Banner1.jpg" alt="Super Duke 1290">
+                <div class="carousel-content">
+                    <h1 class="carousel-title">1290 SUPER DUKE GT</h1>
+                    <p class="carousel-subtitle">THE BEAST</p>
+                    <a href="pages/super-duke-1290.html" class="btn-primary">DISCOVER MORE</a>
+                </div>
+            </div>
+            
+            <!-- Carousel Controls -->
+            <button class="carousel-control prev" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-control next" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+                <span class="indicator" onclick="currentSlide(4)"></span>
+                <span class="indicator" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Grid Section -->
+    <section class="models-section">
+        <div class="container">
+            <h2 class="section-title">OUR MODELS</h2>
+            <div class="models-grid">
+                <div class="model-card">
+                    <a href="pages/690-enduro.html">
+                        <img src="Images/690 Enduro/690 Enduro.jpg" alt="690 Enduro R">
+                        <h3>690 ENDURO R</h3>
+                        <p>Dual Sport</p>
+                    </a>
+                </div>
+                <div class="model-card">
+                    <a href="pages/1290-adventure.html">
+                        <img src="Images/1290 Adventure/1290 Adventure.png" alt="1290 Adventure">
+                        <h3>1290 SUPER ADVENTURE R</h3>
+                        <p>Travel</p>
+                    </a>
+                </div>
+                <div class="model-card">
+                    <a href="pages/duke-790.html">
+                        <img src="Images/Duke 790/duke 790 Orange.png" alt="Duke 790">
+                        <h3>790 DUKE</h3>
+                        <p>Naked Bike</p>
+                    </a>
+                </div>
+                <div class="model-card">
+                    <a href="pages/rc-8c.html">
+                        <img src="Images/RC 8C/RC 8C.jpg" alt="RC 8C">
+                        <h3>RC 8C</h3>
+                        <p>Supersport</p>
+                    </a>
+                </div>
+                <div class="model-card">
+                    <a href="pages/super-duke-1290.html">
+                        <img src="Images/Superduke 1290/Superduke1290.jpg" alt="Super Duke 1290">
+                        <h3>1290 SUPER DUKE GT</h3>
+                        <p>Sports Tourer</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="Images/Logo.jpg" alt="KTM Logo" class="footer-logo">
+                <p>READY TO RACE</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/ktm" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ktmusa/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/KTMUSA" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="pages/contact.html">Contact Us</a></li>
+                    <li><a href="#">Models</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 KTM. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/carousel.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
