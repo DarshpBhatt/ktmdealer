@@ -1,0 +1,299 @@
+/* Model Page Styles */
+
+/* Hero Banner */
+.model-hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    min-height: 400px;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.model-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.model-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--white);
+    z-index: 10;
+}
+
+.model-hero-content h1 {
+    font-size: 64px;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+}
+
+.model-hero-content p {
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Model Overview Section */
+.model-overview {
+    padding: 100px 0;
+    background-color: var(--white);
+}
+
+.model-overview .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.model-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.model-info h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 35px;
+    color: var(--ktm-dark);
+    letter-spacing: -0.5px;
+}
+
+.model-description {
+    font-size: 18px;
+    line-height: 1.9;
+    color: var(--text-dark);
+    margin-bottom: 40px;
+}
+
+/* Color Options */
+.color-options {
+    margin-top: 40px;
+}
+
+.color-options h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.color-selector {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.color-option {
+    position: relative;
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.color-option.active,
+.color-option:hover {
+    border-color: var(--ktm-orange);
+}
+
+.color-option img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.color-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--white);
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* Full Width Banner */
+.banner-section {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin: 80px 0;
+}
+
+.banner-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Specifications Section */
+.specifications {
+    padding: 100px 0;
+    background-color: var(--ktm-light-gray);
+}
+
+.specifications h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 60px;
+    color: var(--ktm-dark);
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.spec-item {
+    background-color: var(--white);
+    padding: 50px 40px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.spec-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.spec-item img {
+    width: 100%;
+    max-width: 200px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.spec-item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--ktm-dark);
+    text-transform: uppercase;
+}
+
+.spec-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* Technical Specs Table */
+.tech-specs {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin-top: 40px;
+}
+
+.tech-specs h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--ktm-dark);
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specs-table tr {
+    border-bottom: 1px solid #eee;
+}
+
+.specs-table td {
+    padding: 18px 0;
+    font-size: 16px;
+}
+
+.specs-table td:first-child {
+    font-weight: 600;
+    color: var(--ktm-gray);
+    width: 40%;
+}
+
+.specs-table td:last-child {
+    color: var(--text-dark);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .model-overview .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .model-hero {
+        height: 50vh;
+        min-height: 300px;
+        margin-bottom: 40px;
+    }
+    
+    .model-hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .model-hero-content p {
+        font-size: 18px;
+    }
+    
+    .model-overview,
+    .specifications {
+        padding: 40px 0;
+    }
+    
+    .model-info h2 {
+        font-size: 28px;
+    }
+    
+    .specifications h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    
+    .banner-section {
+        height: 300px;
+        margin: 40px 0;
+    }
+    
+    .specs-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .spec-item {
+        padding: 30px 20px;
+    }
+    
+    .color-option img {
+        width: 120px;
+        height: 80px;
+    }
+}

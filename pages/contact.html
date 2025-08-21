@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - KTM Motorcycles</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo-wrapper">
+                    <a href="../index.html">
+                        <img src="../Images/Logo.jpg" alt="KTM Logo" class="logo">
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">Models <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="690-enduro.html">690 Enduro R</a></li>
+                                <li><a href="1290-adventure.html">1290 Adventure</a></li>
+                                <li><a href="duke-790.html">Duke 790</a></li>
+                                <li><a href="rc-8c.html">RC 8C</a></li>
+                                <li><a href="super-duke-1290.html">Super Duke 1290</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link active">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="hero-content">
+            <h1>CONTACT US</h1>
+            <p>Get in Touch with KTM</p>
+        </div>
+    </section>
+
+    <!-- Demo Notice -->
+    <section class="demo-notice">
+        <div class="container">
+            <div class="notice-box">
+                <i class="fas fa-info-circle"></i>
+                <h2>DEMO PAGE NOTICE</h2>
+                <p>This is just a demo page created for demonstration purposes only. This is not an official KTM website. 
+                For official KTM information and genuine inquiries, please visit the official KTM website at 
+                <a href="https://www.ktm.com" target="_blank" rel="noopener noreferrer">www.ktm.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <p>Have questions about our motorcycles? Fill out the form below and we'll get back to you.</p>
+                    
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="model">Interested Model</label>
+                            <select id="model" name="model">
+                                <option value="">Select a Model</option>
+                                <option value="690-enduro">690 Enduro R</option>
+                                <option value="1290-adventure">1290 Adventure</option>
+                                <option value="duke-790">Duke 790</option>
+                                <option value="rc-8c">RC 8C</option>
+                                <option value="super-duke-1290">Super Duke 1290</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>Demo Dealership<br>123 Demo Street<br>Demo City, DC 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>demo@ktmdealer.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 7:00 PM<br>
+                            Saturday: 10:00 AM - 6:00 PM<br>
+                            Sunday: Closed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>Follow KTM</h3>
+                        <div class="social-links">
+                            <a href="https://www.youtube.com/ktm" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ktmusa/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://x.com/KTMUSA" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Demo) -->
+    <section class="map-section">
+        <div class="map-placeholder">
+            <i class="fas fa-map-marked-alt"></i>
+            <p>Interactive Map - Demo Only</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="../Images/Logo.jpg" alt="KTM Logo" class="footer-logo">
+                <p>READY TO RACE</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/ktm" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ktmusa/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/KTMUSA" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 KTM. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your message! This is a demo form and messages are not actually sent.');
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+</body>
+</html>
